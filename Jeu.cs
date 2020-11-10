@@ -10,10 +10,7 @@ namespace Puissance4
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("test");
-            Console.Read();
-        
+            Console.WriteLine("Visual studio test");
         }
     }
 }
