@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Puissance4
 {
-    class JoueurIA
+    public class JoueurIA : Joueur
     {
+        public JoueurIA(string nom, char id)
+            :base(nom, id)
+        {
+
+        }
     }
 }
