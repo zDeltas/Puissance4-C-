@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Puissance4
+﻿namespace Puissance4
 {
     public class JoueurIA : Joueur
     {
-        public JoueurIA(string nom, char id)
-            :base(nom, id)
+        public JoueurIA(string Order, char id, System.ConsoleColor color)
+            : base(id, color)
         {
+            Nom = "Mr Robot";
+            AlphaBeta Alphabeta = new AlphaBeta();
+        }
 
+        public override int ChoixPosition()
+        {
+            return 5;
         }
     }
 }

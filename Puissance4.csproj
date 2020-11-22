@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Affichage.cs" />
+    <Compile Include="AlphaBeta.cs" />
     <Compile Include="Grille.cs" />
     <Compile Include="Joueur.cs" />
     <Compile Include="JoueurHumain.cs" />
