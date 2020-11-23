@@ -53,8 +53,20 @@ namespace Puissance4
             int tours = 0;
             bool Win = false;
 
-            Joueur j1 = new JoueurHumain("1", Puissance4.Jeton1, ConsoleColor.Red);
-            Joueur j2 = new JoueurIA("2", Puissance4.Jeton2, ConsoleColor.Yellow);
+            Joueur j1;
+            Joueur j2;
+
+            if(player == 1)
+            {
+                j1 = new JoueurHumain("1", Puissance4.Jeton1, ConsoleColor.Red);
+                j2 = new JoueurHumain("2", Puissance4.Jeton2, ConsoleColor.Yellow);
+            }
+            else
+            {
+                j1 = new JoueurHumain("1", Puissance4.Jeton1, ConsoleColor.Red);
+                j2 = new JoueurIA("2", Puissance4.Jeton2, ConsoleColor.Yellow);
+            }
+
             Joueur[] tableauJoueur = { j1, j2 };
 
             Grille g = new Grille();
